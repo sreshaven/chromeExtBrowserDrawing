@@ -1,8 +1,7 @@
-
+// colorful brush
 let started = false;
 // initialize brush color
 let brushHue;
-
  chrome.runtime.onMessage.addListener(gotMessage);
 
  function gotMessage(message, sender, sendResponse){
@@ -13,7 +12,7 @@ let brushHue;
 
  function setup(){
    // user cannot select text when drawing
-   if(started){
+     console.log("hello")
      document.body.style['userSelect'] = 'none';
    // set canvas to page with clear canvas
      let h = document.body.clientHeight;
@@ -28,11 +27,11 @@ let brushHue;
      colorMode(HSB, 360, 100, 100);
      brushHue = 0;
      strokeWeight(6);
-   }
  }
 
  function draw(){
    if(started){
+     console.log("hello")
      chooseColors();
      if(mouseIsPressed){
        line(pmouseX, pmouseY, mouseX, mouseY);

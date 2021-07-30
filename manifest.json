@@ -7,7 +7,7 @@
       "matches": [
         "<all_urls>"
       ],
-      "js": ["p5.js", "p5.dom.min.js", "content.js"]
+      "js": ["p5.js", "p5.dom.min.js", "sketch.js"]
     }
   ],
   "background": {
